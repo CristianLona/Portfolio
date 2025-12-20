@@ -16,11 +16,11 @@ export default function NavBar() {
     }
 
     return (
-        <header className="top-0 z-50 pt-5">
+        <header className="sticky top-0 z-50 pt-5">
             <Container>
                 <div className="rounded-3xl border border-zinc-800/70 bg-zinc-950/45 backdrop-blur shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
                     <div className="h-14 flex items-center justify-between gap-3 px-4">
-                        {/* Logo */}
+                        {/* Brand */}
                         <button
                             className="font-semibold tracking-tight text-white"
                             onClick={() => go('#top')}
@@ -28,7 +28,7 @@ export default function NavBar() {
                             Cristian Lona
                         </button>
 
-                        {/* Botones con Links */}
+                        {/* Botones */}
                         <nav className="hidden md:flex items-center gap-6">
 
                             <button className={linkBase} onClick={() => go('#about')}>

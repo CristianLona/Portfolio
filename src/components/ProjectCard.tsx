@@ -3,22 +3,22 @@ import type { Project } from '../data/projects'
 export default function ProjectCard({ project }: { project: Project }) {
     return (
         <article
-            className="h-full rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--surface))] p-6 transition hover:bg-[rgb(var(--surface2))]"
+            className="h-full rounded-2xl border border-zinc-800/70 bg-zinc-950/45  backdrop-blur shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] p-6 hover:bg-zinc-900/60 transition flex flex-col"
         >
             {project.image ? (
                 <img
                     src={project.image}
                     alt={project.title}
-                    className="mb-5 h-40 w-full rounded-xl border border-[rgb(var(--border))] object-cover"
+                    className="mb-5 h-40 w-full rounded-xl border border-zinc-600/70 object-cover"
                     loading="lazy"
                 />
             ) : null}
 
-            <h3 className="text-lg font-semibold">
+            <h3 className="text-lg font-semibold text-zinc-100">
                 {project.title}
             </h3>
 
-            <p className="mt-2 text-sm text-[rgb(var(--muted))] leading-relaxed">
+            <p className="mt-2 text-sm text-zinc-400 leading-relaxed">
                 {project.description}
             </p>
 
@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     {project.tags.slice(0, 6).map(t => (
                         <span
                             key={t}
-                            className="rounded-full border border-[rgb(var(--border))] bg-transparent px-3 py-1 text-[rgb(var(--muted))]"
+                            className="rounded-full border border-zinc-600/60 bg-transparent px-3 py-1 text-zinc-400"
                         >
                             {t}
                         </span>
@@ -42,7 +42,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                             href={project.links.github}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-[rgb(var(--muted))] hover:text-[rgb(var(--text))] transition"
+                            className="text-zinc-400 hover:text-zinc-100 transition"
                         >
                             GitHub →
                         </a>
@@ -53,7 +53,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                             href={project.links.demo}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-[rgb(var(--muted))] hover:text-[rgb(var(--text))] transition"
+                            className="text-zinc-400 transition hover:text-zinc-100"
                         >
                             Live Demo →
                         </a>

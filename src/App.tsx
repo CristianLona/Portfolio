@@ -11,15 +11,15 @@ export default function App() {
         <div className="absolute inset-0 bg-[#07080a]" />
 
         {/* gradient lateral izquierdo */}
-        <div className="absolute inset-y-0 left-0 w-[55%] bg-[radial-gradient(ellipse_at_left,rgba(255,255,255,0.10),rgba(0,0,0,0)_70%)]" />
+        <div className="absolute inset-y-0 left-0 w-[55%] bg-[radial-gradient(ellipse_at_left,rgba(255,255,255,0.06),rgba(0,0,0,0)_70%)]" />
 
         {/* gradient lateral derecho */}
-        <div className="absolute inset-y-0 right-0 w-[55%] bg-[radial-gradient(ellipse_at_right,rgba(255,255,255,0.10),rgba(0,0,0,0)_70%)]" />
+        <div className="absolute inset-y-0 right-0 w-[55%] bg-[radial-gradient(ellipse_at_right,rgba(255,255,255,0.06),rgba(0,0,0,0)_70%)]" />
 
 
         {/* WATERMARK (encima de glows) */}
         <div className="absolute inset-0 z-10 flex items-center justify-center">
-          <span className="select-none font-black tracking-tight text-[12rem] md:text-[22rem] text-sky-200/10
+          <span className="select-none font-black tracking-tight text-[12rem] md:text-[24rem] text-sky-200/10
  leading-none flex flex-col items-center">
             <span>C</span>
             <span>O</span>

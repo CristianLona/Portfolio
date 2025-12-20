@@ -26,7 +26,7 @@ export const projects: Project[] = [
         links: {
             github: 'https://github.com/ICaesarI/BergamotaRoutes---TechConnect',
         },
-        layout: { colSpan: 2, rowSpan: 2 }, // 👈 destacado
+        layout: { colSpan: 2, rowSpan: 2 },
 
     },
     {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
         description: 'Intelligent assistant for musculoskeletal health management.',
         tags: ['AI', 'React', 'Python'],
         slug: 'aimus',
-        layout: { colSpan: 2, rowSpan: 1 }, // 👈 destacado
+        layout: { colSpan: 2, rowSpan: 1 }, 
 
     },
     {
@@ -42,7 +42,7 @@ export const projects: Project[] = [
         description: 'Psychological horror game developed in Unity.',
         tags: ['Unity', 'Game Dev', 'C#'],
         slug: 'isla-munecas',
-        layout: { colSpan: 2, rowSpan: 1 }, // 👈 destacado
+        layout: { colSpan: 2, rowSpan: 1 }, 
 
     },
 ]

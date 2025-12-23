@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Container from "./Container"
+import IsotipoN from "../../assets/IsotipoN.png"
 
 const linkBase =
     "shrink-0 rounded-full border border-zinc-800/80 bg-zinc-950/40 px-4 py-1.5 text-xs text-zinc-300 transition hover:bg-zinc-900/60 hover:text-zinc-100 hover:border-zinc-600"
@@ -21,7 +22,6 @@ export default function NavBar() {
         setActive(hash)
     }
 
-    // ✅ marca sección activa con IntersectionObserver (se siente pro)
     useEffect(() => {
         const ids: Array<"#hero" | "#about" | "#projects" | "#contact"> = [
             "#hero",
@@ -56,7 +56,6 @@ export default function NavBar() {
         <header className="sticky top-0 z-50 pt-5">
             <Container>
                 <div className="relative rounded-3xl border border-zinc-800/70 bg-zinc-950/45 backdrop-blur shadow-[0_20px_60px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.06)]">
-                    {/* ✅ glow sutil al hover del navbar */}
                     <div className="pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100" />
                     <div className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 transition hover:opacity-100">
                         <div className="absolute -top-10 left-1/2 h-24 w-72 -translate-x-1/2 rounded-full bg-white/5 blur-3xl" />
@@ -68,7 +67,7 @@ export default function NavBar() {
                             {/* LOGO */}
                             <div className="h-10 w-10 sm:h-11 sm:w-11 rounded-full border border-zinc-800/70 bg-zinc-950/40 flex items-center justify-center overflow-hidden transition group-hover:border-zinc-600/80">
                                 <img
-                                    src="/src/assets/IsotipoN.png"
+                                    src={IsotipoN}
                                     alt="Logo de Cristian Lona"
                                     className="h-full w-full object-cover opacity-90 transition group-hover:opacity-100 group-hover:scale-[1.03]"
                                     loading="lazy"

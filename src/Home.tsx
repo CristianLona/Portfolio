@@ -2,6 +2,8 @@ import Container from "./components/layout/Container"
 import SocialLinks from "./components/layout/SocialLinks"
 import ProjectGrid from "./components/ProjectGrid"
 import { projects } from "./data/projects"
+import logoB from "./assets/logoB.png"
+
 
 import {
   SiReact,
@@ -93,8 +95,7 @@ function Hero() {
 
       <section id="logo" className="h-full flex justify-center items-center">
         <div className="h-48 w-48 rounded-full border border-zinc-800/60 bg-zinc-950/40 backdrop-blur-sm flex items-center justify-center">
-          {/* Nota: si estás en Vite y esto falla en build, cámbialo a import (te lo paso si lo ocupas) */}
-          <img src="/src/assets/logoB.png" alt="Logo de Cristian Lona" />
+          <img src={logoB} alt="Logo de Cristian Lona" />
         </div>
       </section>
     </div>

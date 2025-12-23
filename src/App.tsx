@@ -19,8 +19,7 @@ export default function App() {
 
         {/* WATERMARK (encima de glows) */}
         <div className="absolute inset-0 z-10 flex items-center justify-center">
-          <span className="select-none font-black tracking-tight text-[12rem] md:text-[24rem] text-sky-200/10
- leading-none flex flex-col items-center">
+          <span className="select-none font-black tracking-tight text-[80vh] sm:text-[27vh] text-sky-200/10 blur-[1px] leading-none flex flex-col items-center">
             <span>C</span>
             <span>O</span>
             <span>D</span>

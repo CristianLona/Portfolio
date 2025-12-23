@@ -2,7 +2,7 @@ import Container from "./components/layout/Container"
 import SocialLinks from "./components/layout/SocialLinks"
 import ProjectGrid from "./components/ProjectGrid"
 import { projects } from "./data/projects"
-import logoB from "./assets/logoB.png"
+import logoB from "./assets/LogoB.png"
 
 
 import {
